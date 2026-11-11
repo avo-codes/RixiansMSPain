@@ -3,11 +3,11 @@ namespace HideDetailsMod.HideDetailsModCode.AlternateArts.Cards;
 
 public class HelixDrillArt : AlternateCardArt<HelixDrill>
 {
-    static CardImg IfTea { get; } = new("defect/helix_drill_tea");
+    static CardImg IfMachineLearning { get; } = new("defect/helix_drill_ml");
 
     public override CardImg? Get(HelixDrill card)
     {
-        if (card.Owner.HasCard<MachineLearning>()) return IfTea;
+        if (card.Owner.HasCard<MachineLearning>()) return IfMachineLearning;
         return null;
     }
 }
