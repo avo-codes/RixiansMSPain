@@ -114,7 +114,7 @@
     "defect.boot_sequence_plus":  "10neb01",
     "defect.buffer":  "amidia55|themaskereade",
     "defect.bulk_up":  "lihallerix",
-    "defect.bulk_up_crunchy":  "Sinenomine",
+    "defect.bulk_up_crunchy":  "sinenomine",
     "defect.capacitor":  "quillandpaper",
     "defect.capacitor_plus":  "quillandpaper",
     "defect.chaos":  "salmedix",
@@ -142,7 +142,7 @@
     "defect.claw_17":  "solideryx",
     "defect.cold_snap":  "jinxedwitch",
     "defect.compact":  "an_gun",
-    "defect.compile_driver":  "Vilitsion",
+    "defect.compile_driver":  "vilitsion",
     "defect.compile_driver.TODO":  "deleted user?????",
     "defect.consuming_shadow":  "unadvisedtag00",
     "defect.coolant":  "lmui",
@@ -666,5 +666,5 @@
     "token.sweeping_gaze":  "herobrineghoul",
     "token.waste_away":  "fishstickmystic",
     "defect.one_for_all":  "ripmorld",
-    "defect.helix_drill_tea":  "textures404"
+    "defect.helix_drill_ml":  "textures404"
 }
