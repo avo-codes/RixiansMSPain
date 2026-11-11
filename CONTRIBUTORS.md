@@ -6,3 +6,4 @@
 4. Run build once, or run `./build/link-assets.ps1`
 5. Task: BuildMod to build the mod
 6. Task: PublishMod to build with assets
+7. On updated assets/missing assets/unexpected upgrade behavior don't forget to import and sync
