@@ -106,7 +106,7 @@ public partial class MainFile : Node
                 ["HIDEDETAILSMOD-TEAM.names"] = string.Join('\n', [
                     "Certified Cat Boi||Rixian",
                     "Lead Developer||TekExplorer",
-                    "Unpaid Intern||Fiddlah",
+                    "Can't say no (Dev)||Avo",
                     "Artist Wrangler||Helios",
                     "Art Collector||an_gun"
                 ]),

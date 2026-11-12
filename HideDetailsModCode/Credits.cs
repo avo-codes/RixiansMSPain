@@ -103,11 +103,11 @@ static class Credits
             tips.Add(combinedTip);
         }
 
-        // 2. Memorial / Epitaph Credits remain distinct
+/*         // 2. Memorial / Epitaph Credits remain distinct
         if (GetEpitaphTip(key, isUpgrade) is { } epitaphTip)
         {
             tips.Add(epitaphTip);
-        }
+        } */
 
         return tips;
     }
@@ -318,7 +318,7 @@ static class Credits
         return sb.ToString();
     }
 
-    private static IHoverTip? GetEpitaphTip(CardCreditKey key, bool isUpgraded, bool strictUpgrade = false)
+/*     private static IHoverTip? GetEpitaphTip(CardCreditKey key, bool isUpgraded, bool strictUpgrade = false)
     {
         var epitaphTitle = new LocString("artists", ".epitaph.freddy.title");
         var freddy = new LocString("artists", ".epitaph.freddy.desc");
@@ -354,7 +354,7 @@ static class Credits
 
         epitaph.Add("Freddy", freddy);
         return new HoverTip(epitaphTitle, epitaph);
-    }
+    } */
 
     internal static LocString Replace(LocString str) =>
         LocString.GetIfExists("usernames", str.GetRawText().ToLowerInvariant()) ?? str;

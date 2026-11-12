@@ -46,12 +46,12 @@ internal class MyModConfig : SimpleModConfig
     [ConfigVisibleIf(nameof(UseSimpleMode), false)]
     public static bool UseBetaShivArt { get; set; } = false;
     
-    [ConfigVisibleIf(nameof(UseSimpleMode), false)]
-    public static bool UseBetaSoulArt { get; set; } = false;
+/*     [ConfigVisibleIf(nameof(UseSimpleMode), false)]
+    public static bool UseBetaSoulArt { get; set; } = false; */
 #else
     [ConfigIgnore] public static bool EmulateCanaryMode => false;
     [ConfigIgnore] public static bool UseBetaShivArt => false;
-    [ConfigIgnore] public static bool UseBetaSoulArt => false;
+//    [ConfigIgnore] public static bool UseBetaSoulArt => false;
 #endif
 
     [ConfigSection("Card UI (Cheating)")]

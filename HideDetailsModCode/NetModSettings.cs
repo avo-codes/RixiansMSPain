@@ -87,7 +87,7 @@ public readonly struct NetModSettings
         if (args.Contains("--skip-settings")) return;
         if (MainFile.IsCanary) EnabledFlags.Add("C");
         if (MyModConfig.UseBetaShivArt) EnabledFlags.Add("Shiv");
-        if (MyModConfig.UseBetaSoulArt) EnabledFlags.Add("Soul");
+     //   if (MyModConfig.UseBetaSoulArt) EnabledFlags.Add("Soul");
     }
 
     public override string ToString()
