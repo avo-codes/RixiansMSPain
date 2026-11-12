@@ -8,7 +8,9 @@ class SmokestackArt : AlternateCardArt<Smokestack>
     static CardImg Industry { get; } = new("defect/smokestack_industry");
     public override CardImg? Get(Smokestack card)
     {
-        if (card.Owner.HasCard(card => card is Automation or Production or Catastrophe)) return Industry;
+        if (Util.HasCard<Automation>(card.Owner)) return Industry;
+        if (Util.HasCard<Production>(card.Owner)) return Industry;
+        if (Util.HasCard<Catastrophe>(card.Owner)) return Industry;
         return null;
     }
 }

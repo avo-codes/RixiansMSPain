@@ -7,7 +7,7 @@ public class NoxiousFumesArt : AlternateCardArt<NoxiousFumes>
 
     public override CardImg? Get(NoxiousFumes card)
     {
-                if (card.Owner.HasCard<Outbreak>()) return IfOutbreak;
+                if (Util.HasCard<Outbreak>(card.Owner)) return IfOutbreak;
                 
         return null;
  //       // TODO: remove when 111.0+ become main branch

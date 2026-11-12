@@ -7,7 +7,7 @@ public class HelixDrillArt : AlternateCardArt<HelixDrill>
 
     public override CardImg? Get(HelixDrill card)
     {
-        if (card.Owner.HasCard<MachineLearning>()) return IfMachineLearning;
+        if (Util.HasCard<MachineLearning>(card.Owner)) return IfMachineLearning;
         return null;
     }
 }

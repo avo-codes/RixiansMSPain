@@ -9,7 +9,10 @@ public class BarrageArt : AlternateCardArt<Barrage>
     public override CardImg? Get(Barrage card)
     {
         if (card.Owner.PlayerCombatState is { OrbQueue.Orbs.Count: >= 10 }) return TenOrbs;
-        if (card.Owner.HasCard<DramaticEntrance>()) return IfDramaticEntrance;
+        
+        if(Util.HasCard<DramaticEntrance>(card.Owner)) return IfDramaticEntrance;
+
         return null;
+
     }
 }
