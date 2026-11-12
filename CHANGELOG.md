@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.7-canary] - 2026-11-12
+
+- Added Defect Art
+- Replaced unusable Art
+
 ## [v0.3.6] - 2026-09-19
 
 - Fixed a bug where some cards with alternate arts that depend on the card's owner existing throwing errors in the compendium
