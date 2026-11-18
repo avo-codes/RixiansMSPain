@@ -68,7 +68,6 @@ public class MakeFullArt
             TextureRect? ____banner,
             Control? ____ancientBanner,
             TextureRect? ____ancientTextBg,
-            TextureRect? ____ancientBorderGlassOverlay,
             Material? ____canvasGroupMaskMaterial,
             CanvasGroup? ____portraitCanvasGroup
         )
@@ -76,9 +75,8 @@ public class MakeFullArt
             CardModel? model = __instance?.Model;
             if (____frame == null || ____ancientBorder == null || ____portrait == null ||
                 ____ancientPortrait == null || ____portraitBorder == null || ____banner == null ||
-                ____portraitCanvasGroup == null || ____ancientTextBg == null || ____ancientBanner == null ||
-                ____ancientBorderGlassOverlay == null
-                || model == null) return;
+                ____portraitCanvasGroup == null || ____ancientTextBg == null ||
+                ____ancientBanner == null|| model == null) return;
 
             try
             {
@@ -134,12 +132,11 @@ public class MakeFullArt
                 // Description
                 ____ancientTextBg.Texture = referenceCard.AncientTextBg;
                 ____ancientTextBg.Visible = !MyModConfig.HideDescription;
-                ____ancientBorderGlassOverlay.Visible = !MyModConfig.HideDescription;
 
                 // Card Shape Mask
                 ____canvasGroupMaskMaterial ??=
                     PreloadManager.Cache.GetMaterial("res://scenes/cards/card_canvas_group_mask_material.tres");
-                ____portraitCanvasGroup.Material = ____canvasGroupMaskMaterial;
+                ____portraitCanvasGroup.Material = null;
             }
             catch (Exception err)
             {
@@ -147,6 +144,7 @@ public class MakeFullArt
             }
         }
     }
+
     private static readonly CardModel ancientAttack = ModelDb.Card<NeowsFury>();
     private static readonly CardModel ancientPower = ModelDb.Card<Corruption>();
     private static readonly CardModel ancientSkill = ModelDb.Card<Apotheosis>();

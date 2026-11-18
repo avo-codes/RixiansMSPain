@@ -124,7 +124,7 @@ static class Credits
             var tipLoc = new LocString("artists", ".credits.entry");
             tipLoc.Add("Role", combinedRoles);
             tipLoc.Add("Artists", roles[0].FormattedAuthors);
-            return new HoverTip(tipLoc) { IsDebuff = true };
+            return new HoverTip(tipLoc);
         }
 
         // Multiple distinct roles -> generate each line via .credits.entry and combine
@@ -140,7 +140,7 @@ static class Credits
         var multiLoc = new LocString("artists", ".credits.multi");
         multiLoc.Add("Body", string.Join('\n', lines));
 
-        return new HoverTip(multiLoc) { IsDebuff = true };
+        return new HoverTip(multiLoc);
     }
 
     private static string FormatLocalizedAuthorList(IReadOnlyList<string> authors) =>
