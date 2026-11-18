@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.8-canary] - 2026-11-18
+
+- Restore compatibility with new game versionn (v0.113)
+- Applied custon mask to assets pre-import
+
 ## [v0.3.7-canary] - 2026-11-12
 
 - Added Defect Art
