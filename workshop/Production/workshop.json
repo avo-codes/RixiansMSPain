@@ -1,5 +1,5 @@
 ﻿{
-  "changeNote": "Fixed a bug where some cards with alternate arts that depend on the card's owner existing throwing errors in the compendium",
+  "changeNote": "Full release of Defect",
   "tags": [
     "Configurable",
     "Challenge",

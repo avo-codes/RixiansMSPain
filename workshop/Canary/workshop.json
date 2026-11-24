@@ -1,5 +1,10 @@
 ﻿{
-  "changeNote": "Fixed a bug where some cards with alternate arts that depend on the card's owner existing throwing errors in the compendium",
+  "title": "Rixian's MSPain (Canary)",
+  "description": "Playtest version of 'Rixian's MSPain'",
+  "visibility": "hidden",
+  "changeNote": "Initial release of Defect",
   "tags": [],
-  "dependencies": [3737335127]
+  "dependencies": [3737335127],
+  "minBranch": "public-beta",
+  "maxBranch": "public-beta"
 }
