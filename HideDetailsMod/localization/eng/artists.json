@@ -153,7 +153,7 @@
     "defect.darkness_plus":  "solideryx",
     "defect.defend_defect":  "rixian",
     "defect.defragment":  "aberrantreptile",
-    "defect.defragment_upgraded_focused_strike": "aberrantreptile",
+    "defect.defragment_upgraded_focused_strike":  "aberrantreptile",
     "defect.double_energy":  "simismalding",
     "defect.dualcast":  "bagseys",
     "defect.echo_form":  "darkmega5",
@@ -243,6 +243,7 @@
     "defect.voltaic":  "deemeeart",
     "defect.white_noise":  "jackydaw",
     "defect.zap":  "magic_magspell",
+    "defect.hologram":  "mknightus",
     "event.abundance":  "salmedix",
     "event.abundance_plus":  "salmedix",
     "event.apotheosis":  "starelai",
@@ -670,5 +671,8 @@
     "token.sweeping_gaze":  "herobrineghoul",
     "token.waste_away":  "fishstickmystic",
     "defect.one_for_all":  "ripmorld",
-    "defect.helix_drill_ml":  "textures404"
+    "defect.helix_drill_ml":  "textures404",
+    "event.dingy_dagger":  "fraicheflamme",
+    "event.fine_dagger":  "fraicheflamme",
+    "event.pristine_dagger":  "fraicheflamme"
 }
