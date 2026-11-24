@@ -6,6 +6,8 @@ def mask_image(image_path, mask_path='./mask.png'):
     texture = Image.open(image_path).convert("RGBA")
     #load mask
     mask = Image.open(mask_path).convert("RGBA")
+    #scale mask
+    mask = mask.resize((texture.width, texture.height))
     #apply mask and save
     ImageChops.multiply(texture, mask).save(image_path)
 
@@ -23,5 +25,7 @@ def apply_mask_recursively(path):
 
 # Specify the root asset directory path
 directory_path = '../HideDetailsMod/artist_assets/'
+#path = '../HideDetailsMod/images/cards/otsy_dance.spritesheet.png'
 
 apply_mask_recursively(directory_path)
+#mask_image(path, './osty_dance_mask.png')

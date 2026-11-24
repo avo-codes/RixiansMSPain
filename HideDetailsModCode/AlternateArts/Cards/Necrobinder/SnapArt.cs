@@ -11,11 +11,6 @@ public class SnapArt : AlternateCardArt<Snap>
 
     public override CardImg? Get(Snap card)
     {
-        var OstyDiedThisTurn = CombatManager.Instance.History.Entries
-            .OfType<DamageReceivedEntry>()
-            .Where(entry => entry.HappenedThisTurn(card.CombatState))
-            .Any(entry => entry.Receiver.Monster is Osty && entry.Receiver.PetOwner == card.Owner);
-
-        return OstyDiedThisTurn ? OstyDied : null;
+        return (!card.Owner.IsOstyAlive && card.Owner.Osty != null) ? OstyDied : null;
     }
 }

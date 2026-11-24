@@ -9,13 +9,17 @@ public class FuelArt : AlternateCardArt<Fuel>
     // UltraKill!
     static CardImg Blood { get; } = new("token/fuel_blood");
 
-    // TODO Ironclad
-    // The prerequisite would be having any of Ironclads blood-related cards
+    // The prerequisite is having any of Ironclads blood-related cards
     // (Bloodletting, Bloodwall, Rupture, Hemokinesis) in your deck /
     //  have Refract in your deck
     public override CardImg? Get(Fuel card)
     {
         if (card.Owner.HasPower<RupturePower>()) return Blood;
+        if (Util.HasCard<Refract>(card.Owner)) return Blood;
+        if (Util.HasCard<Bloodletting>(card.Owner)) return Blood;
+        if (Util.HasCard<BloodWall>(card.Owner)) return Blood;
+        if (Util.HasCard<Rupture>(card.Owner)) return Blood;
+        if (Util.HasCard<Hemokinesis>(card.Owner)) return Blood;
 
         return null;
     }
