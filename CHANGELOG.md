@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.9-canary] - UNRELEASED
+
+- fixed multiple compatibility issues with v0.113.x
+- added more conditional card art
+- added more sfx
+- removed lingering unused assets
+
+
 ## [v0.3.8-canary] - 2026-11-18
 
 - Restore compatibility with new game versionn (v0.113)

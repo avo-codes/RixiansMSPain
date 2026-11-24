@@ -1,8 +1,8 @@
 ﻿{
-  "title": "Rixian's MSPain (Canary)",
+  "title": "Rixian's MSPain (Canary) (Not stalled)",
   "description": "Playtest version of 'Rixian's MSPain'",
-  "visibility": "hidden",
-  "changeNote": "Initial release of Defect",
+  "visibility": "unlisted",
+  "changeNote": "Bugfixes and aditional card art.",
   "tags": [],
   "dependencies": [3737335127],
   "minBranch": "public-beta",

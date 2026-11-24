@@ -1,5 +1,7 @@
 ﻿{
-  "changeNote": "Full release of Defect",
+  "title": "Rixian's MSPain",
+  "changeNote": "Full release of Defect & Compatibility with v0.113.1",
+  "visibility": "unlisted",
   "tags": [
     "Configurable",
     "Challenge",
@@ -8,7 +10,10 @@
     "Full Art",
     "Art",
     "Rixian",
+    "Avo",
     "TekExplorer"
   ],
-  "dependencies": [3737335127]
+  "dependencies": [3737335127],
+  "minBranch": "public-beta",
+  "maxBranch": "public-beta"
 }
