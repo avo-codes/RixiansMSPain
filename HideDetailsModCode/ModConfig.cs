@@ -35,7 +35,7 @@ internal class MyModConfig : SimpleModConfig
     public static bool EnableClashAsGrandFinale { get; set; } = true;
 
     [ConfigVisibleIf(nameof(UseSimpleMode), false)]
-    public static bool EnableNeurosurgeYippee { get; set; } = true;
+    public static bool EnableCardSFX { get; set; } = true;
     // public static bool EnableEnemyVisualEffects { get; set; } = true;
 
 #if CANARY
