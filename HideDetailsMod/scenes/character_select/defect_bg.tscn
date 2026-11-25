@@ -1,5 +1,6 @@
 [gd_scene load_steps=12 format=3 ]
 
+[ext_resource type="Script" path="res://HideDetailsModCode/Scenes/CharacterSelect/DefectBg.cs" id="makememiku"]
 [ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT-BACKGROUND.png" id="1_aueyx"]
 [ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - SIGNATURE.png" id="2_4vuig"]
 [ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT-DEFECT.png" id="3_cv5jk"]
@@ -28,6 +29,7 @@ offset_bottom = 679.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(1280, 600)
+script = ExtResource("makememiku")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
@@ -89,6 +91,7 @@ texture = ExtResource("5_v4gs8")
 expand_mode = 3
 
 [node name="Lightning" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 552.0
 offset_top = -35.0
@@ -98,6 +101,7 @@ texture = ExtResource("6_dilj5")
 expand_mode = 3
 
 [node name="Frost" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 880.0
 offset_top = -75.0
@@ -107,6 +111,7 @@ texture = ExtResource("7_uev1e")
 expand_mode = 3
 
 [node name="Darkness" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 320.0
 offset_top = 677.0
@@ -116,6 +121,7 @@ texture = ExtResource("8_qeglf")
 expand_mode = 3
 
 [node name="Glass" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 184.0
 offset_top = 453.0
@@ -125,6 +131,7 @@ texture = ExtResource("9_k25tb")
 expand_mode = 3
 
 [node name="Plasma" type="TextureRect" parent="."]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 264.0
 offset_top = 109.0
