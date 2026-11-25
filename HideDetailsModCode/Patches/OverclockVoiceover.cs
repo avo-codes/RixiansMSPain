@@ -1,0 +1,24 @@
+using HarmonyLib;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Models.Cards;
+
+namespace HideDetailsMod.HideDetailsModCode.Patches;
+
+[HarmonyPatch(typeof(Overclock), "OnPlay")]
+class OverclockVoiceover
+{
+    // HideDetailsMod/audio/{filename}
+    // .wav or .ogg only
+    static string[] Assets => [
+        "OverclockTwo.wav",
+        "OverclockThree.wav"
+    ];
+    static public void Prefix(CardPlay cardPlay)
+    {
+        if (MyModConfig.UseSimpleMode) return;
+        if (!MyModConfig.EnableCardSFX) return;
+        if (Assets.Length == 0) return;
+        var chosen = cardPlay.Card.IsUpgraded == true ? Assets.ElementAt(1) : Assets.First();
+        MainFile.Audio.PlaySfx(chosen, volume: 2);
+    }
+}
