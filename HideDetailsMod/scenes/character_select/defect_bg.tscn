@@ -1,16 +1,16 @@
-[gd_scene load_steps=12 format=3 ]
+[gd_scene load_steps=13 format=3 uid="uid://du7hcqig44lh6"]
 
-[ext_resource type="Script" path="res://HideDetailsModCode/Scenes/CharacterSelect/DefectBg.cs" id="makememiku"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT-BACKGROUND.png" id="1_aueyx"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - SIGNATURE.png" id="2_4vuig"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT-DEFECT.png" id="3_cv5jk"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT-STARS.png" id="4_gwsr0"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - COMIC STARS.png" id="5_v4gs8"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - LIGHTNING ORB.png" id="6_dilj5"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - FROST ORB.png" id="7_uev1e"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - DARK ORB.png" id="8_qeglf"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - GLASS ORB.png" id="9_k25tb"]
-[ext_resource type="Texture2D" path="res://HideDetailsMod/images/character_select/defect/DEFECT - PLASMA ORB.png" id="10_1nhjq"]
+[ext_resource type="Texture2D" uid="uid://b5orn8ix6fqku" path="res://HideDetailsMod/images/character_select/defect/DEFECT-BACKGROUND.png" id="1_aueyx"]
+[ext_resource type="Texture2D" uid="uid://bu0v6nxjf3335" path="res://HideDetailsMod/images/character_select/defect/DEFECT - SIGNATURE.png" id="2_4vuig"]
+[ext_resource type="Texture2D" uid="uid://dnumsoom488lu" path="res://HideDetailsMod/images/character_select/defect/DEFECT-DEFECT.png" id="3_cv5jk"]
+[ext_resource type="Texture2D" uid="uid://dm5njwgni86rj" path="res://HideDetailsMod/images/character_select/defect/DEFECT-STARS.png" id="4_gwsr0"]
+[ext_resource type="Texture2D" uid="uid://bekjedsmr0x4l" path="res://HideDetailsMod/images/character_select/defect/DEFECT - COMIC STARS.png" id="5_v4gs8"]
+[ext_resource type="Texture2D" uid="uid://bfwwgksc1nf8w" path="res://HideDetailsMod/images/character_select/defect/DEFECT - LIGHTNING ORB.png" id="6_dilj5"]
+[ext_resource type="Texture2D" uid="uid://drfri7xsaxb57" path="res://HideDetailsMod/images/character_select/defect/DEFECT - FROST ORB.png" id="7_uev1e"]
+[ext_resource type="Texture2D" uid="uid://bvwihumg1w8jg" path="res://HideDetailsMod/images/character_select/defect/DEFECT - DARK ORB.png" id="8_qeglf"]
+[ext_resource type="Texture2D" uid="uid://daln2o2ljj14o" path="res://HideDetailsMod/images/character_select/defect/DEFECT - GLASS ORB.png" id="9_k25tb"]
+[ext_resource type="Texture2D" uid="uid://d0g118o6w583d" path="res://HideDetailsMod/images/character_select/defect/DEFECT - PLASMA ORB.png" id="10_1nhjq"]
+[ext_resource type="Script" uid="uid://bgwlf250fk7b" path="res://HideDetailsModCode/Scenes/CharacterSelect/DefectBg.cs" id="makememiku"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_l84cy"]
 
@@ -93,49 +93,49 @@ expand_mode = 3
 [node name="Lightning" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 552.0
-offset_top = -35.0
-offset_right = 791.42444
-offset_bottom = 205.0
+offset_left = 829.0
+offset_top = -39.0
+offset_right = 1068.4244
+offset_bottom = 201.0
 texture = ExtResource("6_dilj5")
 expand_mode = 3
 
 [node name="Frost" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 880.0
-offset_top = -75.0
-offset_right = 1210.9961
-offset_bottom = 194.0
+offset_left = 1206.0
+offset_top = -62.0
+offset_right = 1536.9961
+offset_bottom = 207.0
 texture = ExtResource("7_uev1e")
 expand_mode = 3
 
 [node name="Darkness" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 320.0
-offset_top = 677.0
-offset_right = 535.482
-offset_bottom = 893.0
+offset_left = 288.0
+offset_top = 686.0
+offset_right = 503.482
+offset_bottom = 902.0
 texture = ExtResource("8_qeglf")
 expand_mode = 3
 
 [node name="Glass" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 184.0
-offset_top = 453.0
-offset_right = 383.5204
-offset_bottom = 653.0
+offset_left = 159.0
+offset_top = 375.0
+offset_right = 358.5204
+offset_bottom = 575.0
 texture = ExtResource("9_k25tb")
 expand_mode = 3
 
 [node name="Plasma" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 264.0
-offset_top = 109.0
-offset_right = 493.48917
-offset_bottom = 341.0
+offset_left = 394.0
+offset_top = 61.0
+offset_right = 623.48914
+offset_bottom = 293.0
 texture = ExtResource("10_1nhjq")
 expand_mode = 3
