@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v0.3.9-canary] - UNRELEASED
+## [v0.3.9-canary] - 2026-11-25
 
 - fixed multiple compatibility issues with v0.113.x
 - added more conditional card art
