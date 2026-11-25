@@ -9,7 +9,6 @@ All notable changes to this project will be documented in this file.
 - added more sfx
 - removed lingering unused assets
 
-
 ## [v0.3.8-canary] - 2026-11-18
 
 - Restore compatibility with new game versionn (v0.113)

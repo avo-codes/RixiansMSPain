@@ -28,7 +28,7 @@ public partial class MainFile : Node
     public static AutoModAudio Audio { get; } = new("res://HideDetailsMod/audio");
 #if DEBUG 
     public static bool DefectSetActive => true;
-    public static bool IroncladSetActive => true;
+    public static bool IroncladSetActive => false;
 #elif CANARY
     public static bool DefectSetActive => Mod.version?.Minor >= 3;
     public static bool IroncladSetActive => Mod.version?.Minor >= 4;
