@@ -84,58 +84,64 @@ expand_mode = 2
 
 [node name="Stars2" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 64.0
-offset_right = 2016.0
-offset_bottom = 821.0
+offset_left = 121.0
+offset_top = -8.0
+offset_right = 2073.0
+offset_bottom = 813.0
 texture = ExtResource("5_v4gs8")
 expand_mode = 3
 
 [node name="Lightning" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 829.0
-offset_top = -39.0
-offset_right = 1068.4244
-offset_bottom = 201.0
+offset_left = 724.0
+offset_top = -24.0
+offset_right = 963.42444
+offset_bottom = 180.0
 texture = ExtResource("6_dilj5")
 expand_mode = 3
+stretch_mode = 5
 
 [node name="Frost" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 1206.0
-offset_top = -62.0
-offset_right = 1536.9961
-offset_bottom = 207.0
+offset_left = 1153.0
+offset_top = -71.0
+offset_right = 1483.9961
+offset_bottom = 158.0
 texture = ExtResource("7_uev1e")
 expand_mode = 3
+stretch_mode = 5
 
 [node name="Darkness" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 288.0
-offset_top = 686.0
-offset_right = 503.482
-offset_bottom = 902.0
+offset_left = 258.0
+offset_top = 758.0
+offset_right = 473.482
+offset_bottom = 933.0
 texture = ExtResource("8_qeglf")
 expand_mode = 3
+stretch_mode = 5
 
 [node name="Glass" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 159.0
-offset_top = 375.0
-offset_right = 358.5204
-offset_bottom = 575.0
+offset_left = 177.0
+offset_top = 441.0
+offset_right = 376.5204
+offset_bottom = 623.0
 texture = ExtResource("9_k25tb")
 expand_mode = 3
+stretch_mode = 5
 
 [node name="Plasma" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 394.0
-offset_top = 61.0
-offset_right = 623.48914
-offset_bottom = 293.0
+offset_left = 342.0
+offset_top = 142.0
+offset_right = 571.48914
+offset_bottom = 347.0
 texture = ExtResource("10_1nhjq")
 expand_mode = 3
+stretch_mode = 5

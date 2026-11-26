@@ -5,10 +5,10 @@ namespace HideDetailsMod.HideDetailsModCode.Scenes.CharacterSelect;
 public partial class DefectBg : Control
 {
     [Export]
-	private Vector2 radius = new(5.0f, 10.0f);
+	private Vector2 radius = new(5.0f, 15.0f);
 
     [Export]
-	private float speed = 0.15f;
+	private float speed = 0.25f;
 
     [Export]
 	private float maxTiltDegrees = 10.0f; // Significantly reduced for a very gentle sway
