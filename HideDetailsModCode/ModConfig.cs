@@ -20,14 +20,13 @@ internal class MyModConfig : SimpleModConfig
     static public MyModConfig Instance => ModConfigRegistry.Get<MyModConfig>();
 #nullable restore
 
-    // public static bool ShouldPatchCardExporter { get; set; }
-
-    [ConfigSection("Credits")] public static bool ShowCreditsTooltip { get; set; } = true;
+    [ConfigSection("Credits")]
+    public static bool ShowCreditsTooltip { get; set; } = true;
 
     [ConfigSection("Art")]
+    public static bool UseSimpleMode { get; set; } = false;
     // TODO: Not done yet. doesn't reset full-art 
     [ConfigHideInUI] public static bool UseCustomArt { get; set; } = true;
-    public static bool UseSimpleMode { get; set; } = false;
     // Renamed to InfiniteBladesLength2 to reset configs
     [ConfigSlider(0, 5000, 10)] public static float InfiniteBladesLength2 { get; set; } = 3000;
 
@@ -35,7 +34,10 @@ internal class MyModConfig : SimpleModConfig
     public static bool EnableClashAsGrandFinale { get; set; } = true;
 
     [ConfigVisibleIf(nameof(UseSimpleMode), false)]
-    public static bool EnableCardSFX { get; set; } = true;
+    public static bool EnableCardSound { get; set; } = true;
+
+    [ConfigVisibleIf(nameof(UseSimpleMode), false)]
+    public static bool EnableRepeatSound { get; set; } = false;
     // public static bool EnableEnemyVisualEffects { get; set; } = true;
 
 #if CANARY
@@ -51,7 +53,7 @@ internal class MyModConfig : SimpleModConfig
 #else
     [ConfigIgnore] public static bool EmulateCanaryMode => false;
     [ConfigIgnore] public static bool UseBetaShivArt => false;
-//    [ConfigIgnore] public static bool UseBetaSoulArt => false;
+    //    [ConfigIgnore] public static bool UseBetaSoulArt => false;
 #endif
 
     [ConfigSection("Card UI (Cheating)")]

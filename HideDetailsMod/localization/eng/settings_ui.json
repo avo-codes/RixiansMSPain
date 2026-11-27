@@ -30,7 +30,8 @@
   "HIDEDETAILSMOD-HIDE_TITLE_BANNER.title": "Hide Title Banner",
 
   "HIDEDETAILSMOD-MAKE_EVERYTHING_ANCIENT.title": "Make Everything Ancient",
-  "HIDEDETAILSMOD-ENABLE_NEUROSURGE_YIPPEE.title": "Enable Neurosurge Yippee SFX",
+  "HIDEDETAILSMOD-ENABLE_CARD_SOUND.title": "Enable Custom Card SFX",
+  "HIDEDETAILSMOD-ENABLE_REPEAT_SOUND.title": "Enable Card SFX Repeating more than once Per Combat",
 
   "HIDEDETAILSMOD-USE_SIMPLE_MODE.title": "Safe mode - no special effects",
   "HIDEDETAILSMOD-USE_SIMPLE_MODE.desc": "This disables most custom or special effects."

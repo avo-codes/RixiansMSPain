@@ -25,27 +25,14 @@ public class MakeFullArt
         if (model == null) return;
         try
         {
-            if (____typePlaque != null) ____typePlaque.Visible = !MyModConfig.HideType;
-            if (____typeLabel != null) ____typeLabel.Visible = !MyModConfig.HideType;
-            // if (____descriptionLabel != null) ____descriptionLabel.Visible = !MyModConfig.HideDescription;
-            // if (____titleLabel != null) ____titleLabel.Visible = !MyModConfig.HideTitle;
+            ____typePlaque?.Visible = !MyModConfig.HideType;
+            ____typeLabel?.Visible = !MyModConfig.HideType;
         }
         catch (Exception err)
         {
             MainFile.Logger.Error($"Something broke 2 {err}");
         }
     }
-
-    // [HarmonyPostfix]
-    // [HarmonyPatch(typeof(NCard), nameof(NCard._Ready))]
-    // static internal void FixAncientPositioning(NCard __instance)
-    // {
-    //     var portrait = __instance._ancientPortrait;
-    //     portrait.Position = new(
-    //         portrait.Position.X + 10,
-    //         portrait.Position.Y + 10
-    //     );
-    // }
 
     [HarmonyPatch]
     class UseFullArt
@@ -80,9 +67,6 @@ public class MakeFullArt
 
             try
             {
-                // MainFile.Logger.Info($"HERE: {__instance.Model?.Id}");
-                // if (__instance.Model?.Id.ToString() == "CARD.STRIKE_IRONCLAD")
-
                 // TODO: Load the arts separately so we can make it a setting
                 if (model.Rarity != CardRarity.Ancient) ____ancientPortrait.Texture = ____portrait.Texture;
 

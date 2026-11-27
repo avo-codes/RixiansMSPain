@@ -8,6 +8,9 @@ public class AncientBigPortraitPatch
 {
     internal static void Prefix(ref Texture2D texture, ref NCard __instance)
     {
-        texture = __instance.Model.Portrait;
+    if (MyModConfig.UseSimpleMode) return;
+    if (!MyModConfig.MakeEverythingAncient) return;
+
+    texture = __instance.Model.Portrait;
     }
 }

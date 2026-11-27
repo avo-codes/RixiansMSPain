@@ -1,4 +1,5 @@
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Models.Cards;
 
@@ -16,8 +17,9 @@ class OverclockVoiceover
     static public void Prefix(CardPlay cardPlay)
     {
         if (MyModConfig.UseSimpleMode) return;
-        if (!MyModConfig.EnableCardSFX) return;
+        if (!MyModConfig.EnableCardSound) return;
         if (Assets.Length == 0) return;
+        if (!MyModConfig.EnableRepeatSound && CombatManager.Instance.History.CardPlaysFinished.Any(entry => entry.Actor == cardPlay.Player.Creature && entry.CardPlay.Card is Overclock)) return;
         var chosen = cardPlay.Card.IsUpgraded == true ? Assets.ElementAt(1) : Assets.First();
         MainFile.Audio.PlaySfx(chosen, volume: 2);
     }

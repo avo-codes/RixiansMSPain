@@ -19,12 +19,13 @@ class ChaosVoiceover
     static public void Prefix(CardPlay cardPlay)
     {
         if (MyModConfig.UseSimpleMode) return;
-        if (!MyModConfig.EnableCardSFX) return;
+        if (!MyModConfig.EnableCardSound) return;
         if (Assets.Length == 0) return;
+        if (!MyModConfig.EnableRepeatSound && CombatManager.Instance.History.CardPlaysFinished.Any(entry => entry.Actor == cardPlay.Player.Creature && entry.CardPlay.Card is Chaos)) return;
         var MetamorphosisPlayedThisCombat = CombatManager.Instance.History
                  .CardPlaysFinished.Any(entry => entry.Actor == cardPlay.Player.Creature && entry.CardPlay.Card is Metamorphosis);
         var chosen = MetamorphosisPlayedThisCombat == true ? Assets.ElementAt(1) : Assets.First();
         // TODO: mess with pitchVariation
-        MainFile.Audio.PlaySfx(chosen, volume:2 /*,pitchVariation: .3f*/);
+        MainFile.Audio.PlaySfx(chosen, volume: 2 /*,pitchVariation: .3f*/);
     }
 }
