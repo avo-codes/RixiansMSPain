@@ -24,6 +24,7 @@ class ClawArt : AlternateCardArt<Claw>
         new("defect/claw_15"),
         new("defect/claw_16"),
         new("defect/claw_17"),
+        new("defect/claw_18")
     ];
     static int Amount => All.Length;
     static CardImg? Get(int index)
