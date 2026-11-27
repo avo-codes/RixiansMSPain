@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.3.10-canary] - 2026-11-27
+
+- improved sfx config & user-experience
+- finalized defect character select screen
+- added more assets
+
 ## [v0.3.9-canary] - 2026-11-25
 
 - fixed multiple compatibility issues with v0.113.x

@@ -674,5 +674,7 @@
     "defect.helix_drill_ml":  "textures404",
     "event.dingy_dagger":  "fraicheflamme",
     "event.fine_dagger":  "fraicheflamme",
-    "event.pristine_dagger":  "fraicheflamme"
+    "event.pristine_dagger":  "fraicheflamme",
+    "defect.all_for_one":  "afo",
+    "event.god_byrd":  "bl4z3210"
 }
